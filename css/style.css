@@ -1016,3 +1016,12 @@ img {
     .btn { font-size: 9px; padding: 12px 14px; }
     .gameover-title { font-size: 20px; }
 }
+
+/* Botão do site Pixel Jump */
+#btn-site {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative;
+    z-index: 10;
+}

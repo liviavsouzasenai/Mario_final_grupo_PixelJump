@@ -147,6 +147,7 @@ $topScore = !empty($rankingInicial) ? (int)$rankingInicial[0]['pontos'] : 0;
                 <div class="ts-menu">
                     <button type="submit" class="menu-btn is-default" id="btn-start"><span class="cursor">&#9654;</span> INICIAR JOGO</button>
                     <button type="button" class="menu-btn" id="btn-view-ranking"><span class="cursor">&#9654;</span> VER RANKING</button>
+                    <button type="button" class="menu-btn" id="btn-site"><span class="cursor">&#9654;</span> ACESSAR NOSSO SITE</button>
                 </div>
             </form>
 

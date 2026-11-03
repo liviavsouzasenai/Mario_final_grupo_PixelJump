@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startForm = document.getElementById('start-form');
     const playerInput = document.getElementById('player-input');
     const btnViewRanking = document.getElementById('btn-view-ranking');
+    const btnSite = document.getElementById('btn-site');
     const charCards = Array.from(document.querySelectorAll('.char-card'));
     const statusDot = document.getElementById('status-dot');
     const statusText = document.getElementById('status-text');
@@ -930,6 +931,10 @@ document.addEventListener('DOMContentLoaded', () => {
         gameoverModal.classList.add('active');
     });
 
+    // Botão para acessar o site Pixel Jump
+    btnSite.addEventListener('click', () => {
+        window.open('http://localhost/Mario_final_grupo_PixelJump/site/index.html', '_blank', 'noopener,noreferrer');
+    });
     // Botão "JOGAR NOVAMENTE" no Game Over
     btnRestart.addEventListener('click', () => {
         gameoverModal.classList.remove('active');

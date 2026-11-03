@@ -1,0 +1,57 @@
+:root{--noite:#071a4d;--medio:#123a9c;--royal:#1f4fff;--ceu:#4cc3ff;--gelo:#eaf4ff}
+*{box-sizing:border-box}
+body{margin:0;font:18px/1.6 Nunito,Arial,sans-serif;background:var(--gelo);color:var(--noite)}
+h1,h2,h3,.marca span,.btn{font-family:Silkscreen,"Courier New",monospace;line-height:1.2}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ceu);outline-offset:2px}
+
+
+.topo{background:var(--noite);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding:14px 5vw}
+.marca{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-size:22px}
+.marca img{width:44px;height:44px;image-rendering:pixelated}
+.menu a{color:#cfe3ff;text-decoration:none;margin-left:24px;font-weight:800;padding:6px 0;border-bottom:3px solid transparent}
+.menu a:hover,.menu a[aria-current]{color:#fff;border-color:var(--ceu)}
+
+
+.hero{background-color:var(--noite);background-image:linear-gradient(rgba(76,195,255,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(76,195,255,.12) 1px,transparent 1px);background-size:32px 32px;color:#fff;padding:72px 5vw 0;overflow:hidden}
+.hero-in{max-width:1000px;margin:auto}
+.hero h1{font-size:clamp(30px,6vw,58px);margin:0 0 16px;max-width:14ch}
+.hero p{max-width:52ch;color:#cfe3ff;margin:0 0 28px}
+.chao{position:relative;height:32px;background:var(--royal);margin:56px -5vw 0;border-top:8px solid var(--ceu)}
+.heroi{position:absolute;left:62%;bottom:100%;width:48px;height:48px;background:var(--ceu);animation:pulo 1.6s steps(8) infinite}
+.heroi::before{content:"";position:absolute;left:10px;top:12px;width:8px;height:8px;background:#fff;box-shadow:20px 0 #fff}
+@keyframes pulo{0%,100%{transform:translateY(0)}50%{transform:translateY(-120px)}}
+@media (prefers-reduced-motion:reduce){.heroi{animation:none}}
+
+
+.btn{display:inline-block;background:var(--ceu);color:var(--noite);border:3px solid var(--noite);box-shadow:4px 4px 0 var(--royal);padding:12px 22px;font-size:16px;font-weight:700;cursor:pointer;text-decoration:none}
+.hero .btn{border-color:#fff}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--royal)}
+
+
+.bloco{max-width:1000px;margin:auto;padding:64px 5vw}
+h2{font-size:clamp(22px,3.5vw,32px);margin:0 0 20px}
+.sub{max-width:60ch;margin:0 0 32px}
+.hist{display:grid;gap:40px;grid-template-columns:1.4fr 1fr;align-items:start}
+.hist p{max-width:62ch;margin:0 0 16px}
+.fundadores{list-style:none;padding:0;margin:0;display:grid;gap:16px}
+.fundadores li,.card{background:#fff;border:3px solid var(--noite);box-shadow:6px 6px 0 var(--royal);padding:18px 20px}
+.fundadores strong{display:block;font-family:Silkscreen,"Courier New",monospace;color:var(--royal)}
+.cards{display:grid;gap:32px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.card{border-left:14px solid var(--royal);padding:24px}
+.card h3{margin:0 0 10px;font-size:18px;color:var(--medio)}
+.card p{margin:0}
+
+
+.contato{display:grid;gap:40px;grid-template-columns:1fr 1fr}
+form{display:grid;gap:16px;background:#fff;border:3px solid var(--noite);box-shadow:8px 8px 0 var(--royal);padding:28px}
+label{font-weight:800}
+input,select,textarea{width:100%;padding:10px;margin-top:6px;border:3px solid var(--noite);background:var(--gelo);font:inherit;color:var(--noite)}
+.termos{display:flex;gap:10px;align-items:center;font-weight:600}
+.termos input{width:auto;margin:0}
+.acoes{display:flex;gap:14px;flex-wrap:wrap}
+#ok{display:none;margin:0;font-weight:800;color:var(--royal)}
+iframe{width:100%;height:100%;min-height:380px;border:3px solid var(--noite);box-shadow:8px 8px 0 var(--ceu)}
+
+
+.rodape{background:var(--noite);color:#cfe3ff;text-align:center;padding:24px 5vw;font-size:15px}
+@media(max-width:800px){.hist,.contato{grid-template-columns:1fr}.menu a{margin:0 16px 0 0}}
